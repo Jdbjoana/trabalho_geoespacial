@@ -1,3 +1,5 @@
+use joana_dbgeo;
+
 db.alunos.insert( {
     nome: "Joana",
    localizacao: { type: "Point", coordinates: [ -43.310403, -15.7943479 ] },
@@ -183,5 +185,7 @@ db.alunos.insert( {
    localizacao: { type: "Point", coordinates: [-43.3090244,-15.802596] },
    categria: "alunos"
 } );
+
+db.alunos.createIndex( { localizacao: "2dsphere" } )
 
 
