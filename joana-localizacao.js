@@ -20,7 +20,7 @@ db.alunos.insert( {
 
 db.alunos.insert( {
     nome: "Layla",
-   localizacao: { type: "Point", coordinates: [-43.3179687,-158198619] },
+   localizacao: { type: "Point", coordinates: [-43.3179687,-15.8198619] },
    categria: "alunos"
 } );
 
